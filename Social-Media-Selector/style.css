@@ -4,6 +4,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .hidden {
@@ -16,6 +19,23 @@ body {
     margin-top: 12%;
 }
 
+.space {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px 30px;
+    background-color: rgba(245, 245, 245, 0.637);
+}
+
+#flecha {
+    padding-left: 50px;
+}
+
 ul{
     list-style: none;
+}
+
+#contenedor{
+
+    padding-top: 20px;  
+    padding-bottom: 20px;
 }
