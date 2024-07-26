@@ -1,0 +1,11 @@
+body {
+    background-image: linear-gradient(135deg,purple, orange);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hidden {
+    display: none;
+}
+
