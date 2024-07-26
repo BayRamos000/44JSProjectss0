@@ -5,7 +5,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    display: grid;
+    place-items: center;
     
 }
 
@@ -14,8 +16,6 @@ body {
 }
 
 #contenedor {
-    display: grid;
-    place-items: center;
     margin-top: 12%;
 }
 
@@ -27,15 +27,22 @@ body {
 }
 
 #flecha {
-    padding-left: 50px;
+    padding-left: 130px;
 }
 
 ul{
     list-style: none;
 }
 
-#contenedor{
+#contenedor2{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-right: 150px;
+    background-color: rgba(245, 245, 245, 0.637);
+}
 
-    padding-top: 20px;  
-    padding-bottom: 20px;
+i{
+    padding-right: 35px;
+    margin: -20px;
+    margin-top: 12px;
 }

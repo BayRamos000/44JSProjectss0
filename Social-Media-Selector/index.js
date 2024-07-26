@@ -1,11 +1,12 @@
-const firstContainerEl = document.getElementById("")
-const secondContainerEl = document.getElementById("")
-const flecha = document.getElementById("")
+const firstContainerEl = document.getElementById("contenedor")
+const secondContainerEl = document.getElementById("contenedor2")
+const flecha = document.getElementById("flecha")
 
 function hiddeApps (){
-    secondContainerEl.classList.add("hidden")
-    flecha.classList.add ("fas fa-angle-down")
+    secondContainerEl.classList.add("hidden")+
     flecha.classList.remove ("fas fa-angle-up")
+    flecha.classList.add ("fas fa-angle-down")
+    
 }
 
 function showApps (){
@@ -14,7 +15,7 @@ function showApps (){
     flecha.classList.add ("fas fa-angle-up")
 }
 
-firstContainerEl.addEventListener("click", ()=>{
+flecha.addEventListener("click", ()=>{
     if (secondContainerEl.contains("hidden")){
         showApps()
     } else{
