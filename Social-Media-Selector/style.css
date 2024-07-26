@@ -3,15 +3,19 @@ body {
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    background-attachment: fixed;
 }
 
 .hidden {
     display: none;
 }
 
-.contenedor {
+#contenedor {
     display: grid;
     place-items: center;
     margin-top: 12%;
+}
+
+ul{
+    list-style: none;
 }
