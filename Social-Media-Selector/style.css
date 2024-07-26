@@ -3,9 +3,15 @@ body {
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 .hidden {
     display: none;
 }
 
+.contenedor {
+    display: grid;
+    place-items: center;
+    margin-top: 12%;
+}
