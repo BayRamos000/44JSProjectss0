@@ -12,7 +12,8 @@ body {
 }
 
 .hidden {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
 
 #contenedor {
@@ -34,14 +35,30 @@ ul{
     list-style: none;
 }
 
-#contenedor2{
+#contenedor2 .social-icons{
     border: 1px solid black;
     border-radius: 8px;
-    padding-right: 150px;
     background-color: rgba(245, 245, 245, 0.637);
+    padding-top: 20px;  
+    padding-bottom: 20px;
 }
 
-i{
+
+.social-icons li {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: padding 0.2s linear;
+}
+
+.social-icons li:hover {
+    background: darkgray;
+    width: 200px;
+    border-radius: 5px;
+    
+}
+
+.social-icons li .fab {
+    margin: 0 20px;
     padding-right: 35px;
     margin: -20px;
     margin-top: 12px;
