@@ -1,0 +1,69 @@
+body {
+    background-image: linear-gradient(135deg,purple, orange);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;    
+    display: grid;
+    place-items: center;
+    
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.contenedor {
+    margin-top: 12%;
+}
+
+.space {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px 30px;
+    background-color: rgba(245, 245, 245, 0.637);
+}
+
+#flecha {
+    padding-left: 130px;
+}
+
+ul{
+    list-style: none;
+}
+
+#contenedor2 .social-icons{
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgba(245, 245, 245, 0.637);
+    padding-top: 20px;  
+    padding-bottom: 20px;
+}
+
+
+.social-icons li {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: padding 0.2s linear;
+}
+
+.social-icons li:hover {
+    background: darkgray;
+    width: 200px;
+    border-radius: 5px;
+    
+}
+
+.social-icons li .fab {
+    margin: 0 20px;
+    padding-right: 35px;
+    margin: -20px;
+    margin-top: 12px;
+}
+
+#facebook {
+    color: white;
+}
