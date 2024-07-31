@@ -39,22 +39,23 @@ ul{
     border: 1px solid black;
     border-radius: 8px;
     background-color: rgba(245, 245, 245, 0.637);
-    padding-top: 20px;  
-    padding-bottom: 20px;
+    padding-top: 30px;  
+    padding-bottom: 30px;
+    cursor: pointer;
 }
 
 
 .social-icons li {
     margin-top: 10px;
-    cursor: pointer;
     transition: padding 0.2s linear;
 }
 
 .social-icons li:hover {
-    background: darkgray;
+    background: rgb(228, 199, 199);
     width: 200px;
     border-radius: 5px;
-    
+    margin-left: 10px;
+    padding: 2px;
 }
 
 .social-icons li .fab {
