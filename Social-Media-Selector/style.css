@@ -24,7 +24,7 @@ body {
     border: 1px solid black;
     border-radius: 8px;
     padding: 10px 30px;
-    background-color: rgba(245, 245, 245, 0.637);
+    background-color: rgba(248, 246, 246, 0.637);
 }
 
 #flecha {
@@ -39,9 +39,11 @@ ul{
     border: 1px solid black;
     border-radius: 8px;
     background-color: rgba(245, 245, 245, 0.637);
-    padding-top: 30px;  
+    padding-top: 25px;  
     padding-bottom: 30px;
     cursor: pointer;
+    height: 160px;
+    width: 300px;
 }
 
 
@@ -51,8 +53,8 @@ ul{
 }
 
 .social-icons li:hover {
-    background: rgb(228, 199, 199);
-    width: 200px;
+    background: darkgray;
+    width: 80%;
     border-radius: 5px;
     margin-left: 10px;
     padding: 2px;
