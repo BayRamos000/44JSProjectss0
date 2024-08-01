@@ -18,56 +18,57 @@ body {
 
 .contenedor {
     margin-top: 12%;
-    width: 300px;
+    width: 370px;
+    
 }
 
 .space {
     border: 1px solid black;
     border-radius: 8px;
     padding: 10px 30px;
-    background-color: rgba(245, 245, 245, 0.637);
+    background-color: rgba(248, 246, 246, 0.637);
 }
 
 #flecha {
-    padding-left: 130px;
-}
-
-ul{
-    list-style: none;
-}
-
-#contenedor2 .social-icons{
-    border: 1px solid black;
-    border-radius: 8px;
-    background-color: rgba(245, 245, 245, 0.637);
-    padding-top: 20px;  
-    padding-bottom: 20px;
+    padding-left: 190px;
 }
 
 #contenedor2 {
-    width: 300px;
+    width: 350px;
+    background-color: rgba(245, 245, 245, 0.637);
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .social-icons li {
-    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
     cursor: pointer;
-    transition: padding 0.2s linear;
+}
+
+.social-icons li i {
+    margin-right: 10px;
+    font-size: 20px;
 }
 
 .social-icons li:hover {
-    background: darkgray;
-    width: 200px;
+    background-color: rgb(153, 151, 151);
+    color: rgb(70, 69, 69);
     border-radius: 5px;
-    
+    margin-left: 3px;
 }
 
-.social-icons li .fab {
-    margin: 0 20px;
-    padding-right: 35px;
-    margin: -20px;
-    margin-top: 12px;
-}
-
-i {
-    padding-right:7px ;
+.social-icons li:hover i {
+    color: white;
 }
