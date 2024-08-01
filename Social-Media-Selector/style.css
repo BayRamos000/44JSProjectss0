@@ -18,6 +18,7 @@ body {
 
 .contenedor {
     margin-top: 12%;
+    width: 300px;
 }
 
 .space {
@@ -46,6 +47,9 @@ ul{
     width: 300px;
 }
 
+#contenedor2 {
+    width: 300px;
+}
 
 .social-icons li {
     margin-top: 10px;
@@ -67,6 +71,6 @@ ul{
     margin-top: 12px;
 }
 
-#facebook {
-    color: white;
+i {
+    padding-right:7px ;
 }

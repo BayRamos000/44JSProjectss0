@@ -1,7 +1,7 @@
-const firstContainerEl = document.getElementById("contenedor");
 const secondContainerEl = document.getElementById("contenedor2");
 const barraP = document.getElementById("barraP");
-const flecha = document.getElementById("flecha")
+const flecha = document.getElementById("flecha");
+const allinformation = document.querySelectorAll(".social-icons li");
 
 function hideApps() {
     secondContainerEl.classList.add("hidden");
@@ -15,6 +15,15 @@ function showApps() {
     flecha.classList.add("fa-angle-up");
 }
 
+function informationLi() {
+    allinformation.forEach(item => {
+        item.addEventListener("click", () => {
+            const liContent = item.innerHTML; 
+            barraP.innerHTML = liContent, hideApps();
+        });
+    });
+}
+
 barraP.addEventListener("click", () => {
     if (secondContainerEl.classList.contains("hidden")) {
         showApps();
@@ -22,3 +31,5 @@ barraP.addEventListener("click", () => {
         hideApps();
     }
 });
+
+informationLi();
