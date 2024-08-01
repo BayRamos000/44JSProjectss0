@@ -58,7 +58,6 @@ body {
 }
 
 .social-icons li i {
-    margin-right: 10px;
     font-size: 20px;
 }
 
@@ -71,4 +70,8 @@ body {
 
 .social-icons li:hover i {
     color: white;
+}
+
+i {
+    padding-right: 8px;
 }
