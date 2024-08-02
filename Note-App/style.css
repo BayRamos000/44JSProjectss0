@@ -1,0 +1,21 @@
+body{
+    background-image: linear-gradient(tgreen, blue);
+}
+
+
+h1 {
+    display: grid;
+    place-items: center;
+}
+h3 {
+    display: grid;
+    place-items: center;
+}
+
+input {
+    display: inline;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
