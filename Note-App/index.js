@@ -4,7 +4,7 @@ const DocBoton = document.getElementById("boton");
 function crearNota() {
     let nota = document.createElement(`textarea`);
     nota.setAttribute(`id`, `nota`);
-    nota.setAttribute(`placeholder`, `nota vacia`)
+    nota.setAttribute(`placeholder`, `Empty note`)
     DocContenedor.appendChild(nota);
 
     nota.addEventListener("dblclick", ()=>{

@@ -12,7 +12,12 @@ h1 {
 h3 {
     display: grid;
     place-items: center;
+    margin-bottom: 50px;
 }
+
+.container {
+    display: inline;
+} 
 
 textarea {
     display: inline;
@@ -26,4 +31,13 @@ textarea {
 
 textarea:hover{
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.158) ;
+}
+
+button{
+    width: 292px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.281);
+    margin-left: 20px;
+    border: 1px solid rgb(139, 139, 139);
 }
