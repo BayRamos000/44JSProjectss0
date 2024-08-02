@@ -19,7 +19,7 @@ function informationLi() {
     allinformation.forEach(item => {
         item.addEventListener("click", () => {
             const liContent = item.innerHTML; 
-            barraP.innerHTML = liContent, hideApps();
+            barraP.innerHTML = liContent, hideApps(),flecha.classList.add("fa-angle-down");
         });
     });
 }
