@@ -1,5 +1,7 @@
 body{
-    background-image: linear-gradient(tgreen, blue);
+    background-image: linear-gradient(to right, rgb(135, 255, 195), rgb(7, 212, 248));
+    font-family: "Courier New", Courier, monospace;
+    margin-left: 40px;
 }
 
 
@@ -12,10 +14,16 @@ h3 {
     place-items: center;
 }
 
-input {
+textarea {
     display: inline;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.281);
+    padding:20px ;
+    margin-left: 20px;
 }
 
+textarea:hover{
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.158) ;
+}
