@@ -2,6 +2,7 @@ body{
     background-image: linear-gradient(to right, rgb(135, 255, 195), rgb(7, 212, 248));
     font-family: "Courier New", Courier, monospace;
     margin-left: 40px;
+    color: darkblue;
 }
 
 
@@ -29,6 +30,8 @@ textarea {
     padding:20px ;
     margin-left: 20px;
     margin-top: 20px;
+    color: darkblue;
+    font-size: 18px
 }
 
 textarea:hover{
@@ -41,11 +44,12 @@ button{
     width: 308px;
     height: 194px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.281);
     margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.281);
     border: 1px solid rgb(139, 139, 139);
-    font-size: 80px;
+    font-size: 70px;
     color: rgba(65, 66, 66, 0.418);
+    cursor: pointer;
 }
 
 button:hover{
