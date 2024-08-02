@@ -61,6 +61,15 @@ body {
     font-size: 20px;
 }
 
+#facebook {
+    width: 20px;
+    height: 20px;
+    background-color: #1f9dbd; 
+    border-radius: 50%;  
+    align-items: center;
+    justify-content: center;
+    color: white; 
+}
 .social-icons li:hover {
     background-color: rgb(153, 151, 151);
     color: rgb(70, 69, 69);
