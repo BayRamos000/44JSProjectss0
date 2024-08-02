@@ -1,0 +1,40 @@
+body {
+    font-family: cursive;
+    display: grid;
+    place-items: center;
+    margin-top: 12%;
+    background: rgb(250, 142, 142);
+}
+
+.contenedor {
+    width: 500px;
+    height: 250px;
+    display: grid;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgb(245, 201, 201);
+}
+
+#texto {
+    height: 100px;
+    font-size: 20px;
+    border: 2px solid;
+}
+
+.contenedor2 {
+    display: inline-flex; 
+    gap: 38%;
+}
+
+h3 {
+    color: gray;
+}
+
+#tcaracter {
+    color: rgb(160, 92, 160);
+}
+
+#restante {
+    color: orangered;
+}
+
