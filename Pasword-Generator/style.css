@@ -52,3 +52,35 @@ button{
     color: #99999988;
     font-size: 27px;
 }
+
+
+#contenedor2 {
+    position: fixed;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 7px;
+    bottom: 10px;
+    right: -100%;
+    font-size: 22px;
+    color: black;
+    animation: slideInOut 5s forwards; 
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes slideInOut {
+    0% {
+        right: -100%;
+    }
+    20% {
+        right: 10px;
+    }
+    80% {
+        right: 10px;
+    }
+    100% {
+        right: -100%; 
+    }
+}
