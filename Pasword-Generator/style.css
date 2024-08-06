@@ -10,7 +10,7 @@ body {
 
 .container {
     background-color: pink;
-    padding: 15px 30px 20px 20px;
+    padding: 15px 50px 20px 20px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 1px black;
     position: relative;
@@ -20,6 +20,7 @@ input{
     width: 400px;
     border-radius: 10px ;
     height: 40px;
+    border-color: black;
 }
 
 button{
@@ -35,15 +36,15 @@ button{
 
 :placeholder-shown{
     color: black;
-    padding-left: 20px;
+    padding-left: 10px;
     background-color: transparent;
-    font-size: 22px;
+    font-size: 21px;
 }
 
 
 .container .copy-icon {
     position: absolute;
-    right: 50px;
+    right: 60px;
     top: 53%;
     transform: translateY(-50%);
     cursor: pointer;
