@@ -1,0 +1,54 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    display: grid;
+    place-items: center;
+    margin-top: 17%;
+}
+
+
+
+
+.container {
+    background-color: pink;
+    padding: 15px 30px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px black;
+    position: relative;
+}
+
+input{
+    width: 420px;
+    border-radius: 10px ;
+    height: 40px;
+    border-color: black;
+}
+
+button{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+:placeholder-shown{
+    color: black;
+    padding-left: 10px;
+    background-color: transparent;
+    font-size: 21px;
+}
+
+
+.container .copy-icon {
+    position: absolute;
+    right: 60px;
+    top: 53%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #99999988;
+    font-size: 27px;
+}
