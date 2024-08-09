@@ -28,3 +28,7 @@ ul {
     cursor: pointer;
 }
 
+ul li:hover {
+    color: brown;
+}
+
