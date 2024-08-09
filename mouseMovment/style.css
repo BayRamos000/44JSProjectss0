@@ -1,5 +1,7 @@
 body {
     background: rgb(3, 3, 121);
+    display: grid;
+    place-items: center;
 }
 
 .contenedor {
@@ -8,7 +10,6 @@ body {
     height: 250px;
     top: 200px;
     display: flex;
-    left: 400px;
     color: white;
     font-family: cursive;
 }
