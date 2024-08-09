@@ -1,0 +1,25 @@
+body{
+    display: grid;
+    place-items: center;
+    margin-top: 37%;
+    background-color:salmon;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color: white;
+}
+
+.emoji {
+    text-align: center;
+    background-color: rgba(245, 245, 220, 0.479);
+    font-size: 470%;
+    border-radius: 10px;
+    padding: 0px 3px 0px 3px ;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+p{
+    color: blue;
+}
