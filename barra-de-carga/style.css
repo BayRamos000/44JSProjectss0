@@ -1,3 +1,32 @@
 body{
     background-color: black;
+    display: grid;
+    place-items: center;
+    margin-top: 17%;
+    font-family: cursive;
+}
+
+h1, h2{
+    color: white;
+}
+
+h1{
+    margin-top: -2px;
+    font-size: 40px;
+}
+
+
+.loading-bar-back {
+    position: absolute;
+    height: 8px;
+    background-color: orangered;
+    border-radius: 5px;
+    border: none;
+}
+
+.loading-bar-front {
+    height: 8px;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: none;
 }
