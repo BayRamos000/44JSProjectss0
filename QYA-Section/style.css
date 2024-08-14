@@ -1,0 +1,19 @@
+.primero {
+    background: red;
+    
+}
+
+.segundo {
+    background: yellow;
+    
+}
+
+.tercero {
+    background: green;
+    
+}
+
+.hidden {
+    display: none;
+    
+}
