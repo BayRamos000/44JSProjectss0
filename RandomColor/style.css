@@ -1,12 +1,13 @@
 body{
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.container {
+.contenedores {
     background-color: rgb(14, 218, 150);
     width: 170px;
     height: 100px;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
