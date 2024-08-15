@@ -1,13 +1,30 @@
+
 body{
-    display: flex;
-    flex-direction: column;
+   font-family: cursive;
+   margin: 0;
+}
+
+.contenedor{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contenedores {
-    background-color: rgb(14, 218, 150);
-    width: 170px;
-    height: 100px;
+    width: 300px;
+    height: 150px;
+    color: white;
+    margin: 5px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: solid black 2px;
     border-radius: 10px;
-    margin-top: 10px;
+}
+
+h1{
+    text-align: center;
 }
 
