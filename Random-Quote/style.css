@@ -1,7 +1,7 @@
 body{
     display: grid;
     place-items: center;
-    background-image:linear-gradient(rgba(117, 202, 241, 0.774), rgb(194, 248, 194));
+    background-image:linear-gradient(rgba(153, 248, 153, 0.836),rgba(117, 202, 241, 0.774));
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
