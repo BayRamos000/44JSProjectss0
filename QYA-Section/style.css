@@ -1,19 +1,50 @@
+body{
+    font-family: cursive;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    background: rgb(235, 227, 214);
+}
 .primero {
-    background: red;
-    
+    width: 600px;
+    display: grid;
+    text-align: center;
+    background: white;
+    color: rgb(74, 211, 97);
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px 0px black;
+}
+
+p{
+    border-top: 1px solid;
+    font-size: 15px;
 }
 
 .segundo {
-    background: yellow;
-    
+    width: 600px;
+    display: grid;
+    text-align: center;
+    background: white;
+    color: rgb(74, 211, 97);
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px 0px black;
 }
 
 .tercero {
-    background: green;
-    
+    width: 600px;
+    margin-top: 20px;
+    display: grid;
+    text-align: center;
+    background: white;
+    color: rgb(74, 211, 97);
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px 0px black;
 }
 
 .hidden {
     display: none;
-    
 }
