@@ -1,0 +1,40 @@
+body {
+    background: palevioletred;
+    text-align: center;
+}
+
+img {
+    width: 40px;
+}
+
+.contenedor2{
+    display: inline-flex;
+    text-align: center;
+    gap: 30px;
+    display: none;
+}
+
+.boton {
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+}
+
+.contenedor{
+    margin-top: 150px;
+    width: 500px;
+    background: red;
+    margin-left: 30%;
+}
+
+.hidden {
+
+}
+
+.contenedor3 {
+    position: absolute;
+    top: 50px;
+    bottom: 80%;
+    z-index: 1000;
+}
