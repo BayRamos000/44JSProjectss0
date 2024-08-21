@@ -19,7 +19,8 @@ body{
     margin-top: -22px;
     height: 850px;
     margin-bottom: -10px;
-    animation: slideInOut 5s forwards; 
+    animation: slideInOut 1s forwards;
+    position: relative; 
 }
 
 .hidden {
@@ -28,7 +29,7 @@ body{
 
 @keyframes slideInOut {
     0% {
-        left: -100%;
+        left: -50%;
     }
     100% {
         left: 0%; 
