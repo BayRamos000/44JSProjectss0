@@ -1,5 +1,5 @@
 body{
-    background: rgba(226, 129, 202, 0.849);
+    background: rgba(218, 161, 194, 0.849);
 }
 
 .activo.contenedor2 {
@@ -22,7 +22,7 @@ body{
     height: 400px;
     margin-top: 100px;
     margin-left: 600px;
-    background: red;
+    background: antiquewhite;
     padding-left: 20px;
     
 }
@@ -58,9 +58,30 @@ button {
     width: 184px;
     gap: 0;
     margin-left: -20px;
+    background: rgb(189, 189, 243);
+    border: none;
+}
+
+#primero:hover {
+    background: rgb(238, 18, 165);
+}
+
+#segundo:hover {
+    background: rgb(238, 18, 165); 
+}
+
+#tercero:hover {
+    background: rgb(238, 18, 165); 
 }
 
 #tercero{
     padding-right: 0;
     width: 184px;
+}
+
+/* esta es la clase que le agregue al boton
+cuando le das click se le agrega esta clase 
+solo al boton al que se le dio click */
+.color {
+    background: antiquewhite;
 }
