@@ -2,11 +2,56 @@
     position: fixed;
     top: 2rem;
     right: 3rem;
-    color: #040706;
+    color: #39f3b5;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
-.fa-bars:hover{
-    color: #39f3b5;
+body{
+    font-family: sans-serif;
+    background-color: rgba(212, 211, 208, 0.5);
 }
+
+.Contenedor{
+    background-color:white;
+    width: 400px;
+    margin-left: -10px;
+    margin-top: -22px;
+    height: 850px;
+    margin-bottom: -10px;
+
+}
+
+h1{
+    color: rgb(233, 81, 213);
+    padding: 10px;
+}
+
+h4:hover{
+    background-color: rgba(207, 114, 202, 0.541);
+    padding: 10px;
+    color: white;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+h4{
+    padding: 10px;
+    font-size: 26px;
+    color: rgba(116, 115, 115, 0.747);
+    cursor: pointer;
+}
+
+
+#exis{
+    float: right;
+    margin-top: -60px;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#exis:hover{
+    color:violet ;
+}
+
