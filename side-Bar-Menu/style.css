@@ -2,7 +2,11 @@
     position: fixed;
     top: 2rem;
     right: 3rem;
-    color: #39f3b5;
+    color: #040706;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+.fa-bars:hover{
+    color: #39f3b5;
 }
