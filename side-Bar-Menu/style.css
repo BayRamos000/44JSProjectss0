@@ -1,12 +1,3 @@
-.fa-bars {
-    position: fixed;
-    top: 2rem;
-    right: 3rem;
-    color: #39f3b5;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
 body{
     font-family: sans-serif;
     background-color: rgba(212, 211, 208, 0.5);
@@ -35,6 +26,22 @@ body{
         left: 0%; 
     }
 }
+
+.fa-bars {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    color: violet;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.fa-bars:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
 h1{
     color: rgb(233, 81, 213);
     padding: 10px;
