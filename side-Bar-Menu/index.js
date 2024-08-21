@@ -1,11 +1,17 @@
-const sanwich = document.querySelector(".fa-bars");
-const DocContenedor = document.querySelector(".contenedor");
-const botonCerrar = document.querySelector(".fa-times");
+const barras = document.getElementById("tresBarras")
+const contenedor = document.getElementById("Contenedor")
+const exis = document.getElementById("exis")
 
-sanwich.addEventListener("click", () => {
-  DocContenedor.classList.toggle("mostrarMenu");
-});
 
-botonCerrar.addEventListener("click", () => {
-  DocContenedor.classList.remove("mostrarMenu");
-});
+barras.addEventListener("click", ()=>{
+    if (contenedor.classList.contains("hidden")){
+        contenedor.classList.remove("hidden")
+    }
+    else{
+        contenedor.classList.add("hidden")
+    }
+})
+
+exis.addEventListener("click", ()=>{
+        contenedor.classList.add("hidden")
+})

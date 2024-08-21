@@ -1,26 +1,46 @@
-.fa-bars {
-    position: fixed;
-    top: 2rem;
-    right: 3rem;
-    color: #39f3b5;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
 body{
     font-family: sans-serif;
     background-color: rgba(212, 211, 208, 0.5);
 }
 
-.Contenedor{
+#Contenedor{
     background-color:white;
     width: 400px;
     margin-left: -10px;
     margin-top: -22px;
     height: 850px;
     margin-bottom: -10px;
-
+    animation: slideInOut 1s forwards;
+    position: relative; 
 }
+
+.hidden {
+    display: none;
+}
+
+@keyframes slideInOut {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 0%; 
+    }
+}
+
+.fa-bars {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    color: violet;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.fa-bars:hover{
+    color: black;
+    cursor: pointer;
+}
+
 
 h1{
     color: rgb(233, 81, 213);
@@ -41,6 +61,9 @@ h4{
     color: rgba(116, 115, 115, 0.747);
     cursor: pointer;
 }
+
+
+
 
 
 #exis{
