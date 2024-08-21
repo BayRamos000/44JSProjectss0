@@ -1,3 +1,12 @@
+.fa-bars {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    color: #39f3b5;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 body{
     font-family: sans-serif;
 }
