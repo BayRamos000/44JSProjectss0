@@ -24,6 +24,7 @@ body{
     margin-left: 600px;
     background: antiquewhite;
     padding-left: 20px;
+    border-radius: 10px;
     
 }
 
@@ -61,6 +62,9 @@ button {
     background: rgb(189, 189, 243);
     border: none;
 }
+#primero {
+    border-radius: 10px 0 0 0;
+}
 
 #primero:hover {
     background: rgb(238, 18, 165);
@@ -68,6 +72,10 @@ button {
 
 #segundo:hover {
     background: rgb(238, 18, 165); 
+}
+
+#tercero {
+    border-radius: 10px 0 0 0;
 }
 
 #tercero:hover {
@@ -81,7 +89,8 @@ button {
 
 /* esta es la clase que le agregue al boton
 cuando le das click se le agrega esta clase 
-solo al boton al que se le dio click */
+solo al boton al que se le dio click 
+*/
 .color {
     background: antiquewhite;
 }
