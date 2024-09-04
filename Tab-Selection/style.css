@@ -2,20 +2,11 @@ body{
     background: rgba(218, 161, 194, 0.849);
 }
 
-.activo.contenedor2 {
+.activo{
     visibility: hidden;
     opacity: 0;
 }
 
-.activo.contenedor3 {
-    visibility: hidden;
-    opacity: 0;
-}
-
-.activo.contenedor1{
-    visibility: hidden;
-    opacity: 0;
-}
 .contenedor {
     text-align: center;
     width: 500px;
@@ -36,18 +27,18 @@ img{
     border: 3px solid;
 }
 
-.contenedor1{
+#contenedor1{
     padding-right: 20px; 
 }
 
-.contenedor2{
+#contenedor2{
     position: relative;
     top: -194px;
-    color: antiquewhite;
+    color: rgb(0, 0, 0);
     padding-right: 20px;
 }
 
-.contenedor3{
+#contenedor3{
     position: relative;
     top: -333px;
     color: rgb(184, 64, 64);
