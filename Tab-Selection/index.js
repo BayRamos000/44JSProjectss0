@@ -7,9 +7,6 @@ const boton3 = document.getElementById("tercero")
 
 
 
-
-
-
 boton1.addEventListener("click", () =>{
     contenedorUno.classList.remove ("activo")
     contenedortres.classList.add ("activo")
