@@ -1,37 +1,29 @@
+//  ECUACIONES LINEALES
 
-let a = 5;
-let b = 4;
-let c = 8;
-let sumar = b + c;
-console.log(sumar)
-let resta = sumar / a;
+let simbolos = [">", "<", ">=", "<="];
 
-console.log(resta)
+let valordeA = prompt("Ingrese el valor que contenga X: ")
+let valordeB = prompt("Ingrese el segundo valor: ");
+let valordeC = prompt("Ingrese el tercer valor: ");
 
-let repetir = 1;
-let opcion = 2;
-while(repetir > 1){
-    console.log("elige una apcion de comparacion")
-    console.log("1. < manor que");
-    console.log("2. </ menor o igual");
-    console.log("3. > mayor que");
-    console.log("4. >/ mayor o igual");
-
-    switch (opcion) {
-        case 1:
-            console.log("es menor que")
-            break;
-        case 2:
-            console.log("es menor o igual");
-            break;
-        case 3:
-            console.log("es mayor que");
-            break;
-        case 4:
-            console.log("es mayor o igual")
-            break;
-        default:
-            console.log("no se resivio la opcion del comparador")
-            break;
+let simbolo = prompt("Introduce el número de símbolo de tu operación (  1. > 2. < 3. >= 4. <=  ): ");
+let simboloAMostrar = simbolos[Number(simbolo) - 1];
+if (isNaN(valordeA) || isNaN(valordeB) || isNaN(valordeC) || isNaN(simbolo)){
+    alert("Error, el valor ingresado no es un número, recuerda solo ingresar numeros");
+}
+else{
+    let calculo = (valordeC - valordeB) / valordeA;
+    if (calculo < 0) {
+    if (simboloAMostrar === ">") {
+        simboloAMostrar = "<";
+    } else if (simboloAMostrar === "<") {
+        simboloAMostrar = ">";
+    } else if (simboloAMostrar === ">=") {
+        simboloAMostrar = "<=";
+    } else if (simboloAMostrar === "<=") {
+        simboloAMostrar = ">=";
     }
 }
+alert(`El resultado es: X ${simboloAMostrar} ${calculo}`);             
+}
+
