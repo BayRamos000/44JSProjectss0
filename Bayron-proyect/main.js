@@ -1,5 +1,6 @@
 //  ECUACIONES LINEALES
 
+function inecuaciones () {
 let simbolos = [">", "<", ">=", "<="];
 
 let valordeA = prompt("Ingrese el valor que contenga X: ")
@@ -27,3 +28,4 @@ else{
 alert(`El resultado es: X ${simboloAMostrar} ${calculo}`);             
 }
 
+}
