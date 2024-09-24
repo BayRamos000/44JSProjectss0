@@ -39,20 +39,42 @@ function inecuaciones() {
 }
 
 
+
 function dosvariables() {
-    
-    let A = parseFloat(prompt("Ingrese el coeficiente de X : "));
-    let B = parseFloat(prompt("Ingrese el coeficiente de Y : "));
+
+    let A = parseFloat(prompt("Ingrese el coeficiente de X en la primera ecuación: "));
+    let B = parseFloat(prompt("Ingrese el coeficiente de Y en la primera ecuación: "));
     let C = parseFloat(prompt("Ingrese el término independiente en la primera ecuación: "));
 
-    let a1 = 1;
-    let b2 = -2;
-    let c2 = -1;
+    let a1 = 1;  
+    let b2 = -2; 
+    let c2 = -1; 
 
+    console.log(`Primera ecuación: ${A}x + ${B}y = ${C}`);
+    console.log(`Segunda ecuación: ${a1}x + (${b2})y = ${c2}`);
 
-    let y = (C - A * (c2 / a1)) / B;
-    let x = (c2 - b2 * y) / a1;
-    alert(`el resultado de y =${y.toFixed(2)} y x =${x.toFixed(2)}`);
+    let paso1_y = c2 / a1;
+    let paso2_sustitucion = A * paso1_y;
+    let y = (C - paso2_sustitucion) / B;
+    let paso4_x = b2 * y;    
+    let x = (c2 - paso4_x) / a1;
+        
+    console.log(`Paso 1: Despejamos x de la segunda ecuación: x = ${paso1_y}`);
+    console.log(`Paso 2: Sustituimos x en la primera ecuación: ${A} * (${paso1_y}) = ${paso2_sustitucion}`);
+    console.log(`Paso 3: Despejamos y: (${C} - ${paso2_sustitucion}) / ${B} = y = ${y.toFixed(2)}`);
+    console.log(`Paso 4: Sustituimos y en la segunda ecuación: ${b2} * ${y.toFixed(2)} = ${paso4_x}`);
+    console.log(`Paso 5: Despejamos x: (${c2} - ${paso4_x}) / ${a1} = x = ${x.toFixed(2)}`);
+    alert(`El resultado es: y = ${y.toFixed(2)} y x = ${x.toFixed(2)}`);
+    console.log(`Resultado final: y = ${y.toFixed(2)} y x = ${x.toFixed(2)}`);
 }
 
-dosvariables()
+
+
+let pregunta = parseFloat(prompt("Escoge inecuaciones = 1 o Dosvaribles = 2"))
+
+if (pregunta === 1){
+    inecuaciones();
+}
+else if (pregunta === 2){
+    dosvariables();
+}
