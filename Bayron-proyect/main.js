@@ -1,5 +1,5 @@
 //  ECUACIONES LINEALES
-
+/*
 function inecuaciones () {
 let simbolos = [">", "<", ">=", "<="];
 
@@ -29,3 +29,21 @@ alert(`El resultado es: X ${simboloAMostrar} ${calculo}`);
 }
 
 }
+*/
+function dosvariables() {
+    
+    let A = parseFloat(prompt("Ingrese el coeficiente de X : "));
+    let B = parseFloat(prompt("Ingrese el coeficiente de Y : "));
+    let C = parseFloat(prompt("Ingrese el término independiente en la primera ecuación: "));
+
+    let a1 = 1;
+    let b2 = -2;
+    let c2 = -1;
+
+
+    let y = (C - A * (c2 / a1)) / B;
+    let x = (c2 - b2 * y) / a1;
+    alert(`el resultado de y =${y.toFixed(2)} y x =${x.toFixed(2)}`);
+}
+
+dosvariables()
