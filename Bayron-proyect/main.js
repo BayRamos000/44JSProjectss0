@@ -39,6 +39,7 @@ function inecuaciones() {
 }
 
 
+
 function dosvariables() {
     let a1 = parseFloat(prompt("Ingrese el valor de a1 (coeficiente de x en la primera ecuacion): "));
     let b1 = parseFloat(prompt("Ingrese el valor de b1 (coeficiente de y en la primera ecuacion): "));
@@ -50,6 +51,34 @@ function dosvariables() {
     
     // Determinantes
     let det = a1 * b2 - a2 * b1;
+    //muestro las ecuaciones
+    let problema = `${a1}x ${b1 < 0 ? "-" : "+"} ${Math.abs(b1)}y = ${c1}`;
+    let problema1 = `${a2}x ${b2 < 0 ? "-" : "+"} ${Math.abs(b2)}y = ${c2}`;
+    console.log(problema);
+    console.log(problema1);
+    //muestro las filas y columnas
+    let filaUno = `${a1 < 0? "-": "+"} ${Math.abs(a1)} ${b1 < 0? "-": "+"} ${Math.abs(b1)}`;
+    let filaDos = `${a2 < 0? "-": "+"} ${Math.abs(a2)} ${b2 < 0? "-": "+"} ${Math.abs(b2)}`;
+    console.log(filaUno);
+    console.log(filaDos);
+    //muestro el calculo de la determinante
+    let de = `(${a1 < 0? "-": "+"} ${Math.abs(a1)} * ${b2 < 0? "-": "+"} ${Math.abs(b2)}) - (${a2 < 0? "-": "+"} ${Math.abs(a2)} * ${b1 < 0? "-": "+"} ${Math.abs(b1)})`;
+    console.log(de);
+    //muestro el calculo de la determinante de x
+    let fiUno =  `${c1 < 0? "-": "+"} ${Math.abs(c1)} ${b1 < 0? "-": "+"} ${Math.abs(b1)}`;
+    console.log(fiUno);
+    let fiDos = `${c2 < 0? "-": "+"} ${Math.abs(c2)} ${b2 < 0? "-": "+"} ${Math.abs(b2)}`;
+    console.log(fiDos);
+    let dex = `(${c1 < 0? "-": "+"} ${Math.abs(c1)} * ${b2 < 0? "-": "+"} ${Math.abs(b2)}) - (${c2 < 0? "-": "+"} ${Math.abs(c2)} * ${b1 < 0? "-": "+"} ${Math.abs(b1)})`;
+    console.log(dex);
+    //muestro el calculo de la deterninante de y
+    let Funo = `${a1 < 0? "-": "+"} ${Math.abs(a1)} ${c1 < 0? "-": "+"} ${Math.abs(c1)}`;
+    console.log(Funo);
+    let Fdos = `${a2 < 0? "-": "+"} ${Math.abs(a2)} ${c2 < 0? "-": "+"} ${Math.abs(c2)}`;
+    console.log(Fdos);
+    let dey = `(${a1 < 0? "-": "+"} ${Math.abs(a1)} * ${c2 < 0? "-": "+"} ${Math.abs(c2)}) - (${a2 < 0? "-": "+"} ${Math.abs(a2)} * ${c1 < 0? "-": "+"} ${Math.abs(c1)})`;
+    console.log(dey); 
+
     
     if (det === 0) {
         alert("El sistema no tiene solución única (las ecuaciones son paralelas o coincidentes).");
@@ -64,5 +93,10 @@ function dosvariables() {
     }
 }
 
-
-dosvariables()
+let pregunta = parseFloat(prompt("Escoge inecuaciones = 1 o Dosvaribles = 2"))
+if (pregunta === 1){
+    inecuaciones();
+}
+else if (pregunta === 2){
+    dosvariables();
+}
