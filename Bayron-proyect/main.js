@@ -40,19 +40,29 @@ function inecuaciones() {
 
 
 function dosvariables() {
+    let a1 = parseFloat(prompt("Ingrese el valor de a1 (coeficiente de x en la primera ecuacion): "));
+    let b1 = parseFloat(prompt("Ingrese el valor de b1 (coeficiente de y en la primera ecuacion): "));
+    let c1 = parseFloat(prompt("Ingrese el valor de c1 (termino independiente de la primera ecuacion): "));
     
-    let A = parseFloat(prompt("Ingrese el coeficiente de X : "));
-    let B = parseFloat(prompt("Ingrese el coeficiente de Y : "));
-    let C = parseFloat(prompt("Ingrese el término independiente en la primera ecuación: "));
-
-    let a1 = 1;
-    let b2 = -2;
-    let c2 = -1;
-
-
-    let y = (C - A * (c2 / a1)) / B;
-    let x = (c2 - b2 * y) / a1;
-    alert(`el resultado de y =${y.toFixed(2)} y x =${x.toFixed(2)}`);
+    let a2 = parseFloat(prompt("Ingrese el valor de a2 (coeficiente de x en la segunda ecuacion): "));
+    let b2 = parseFloat(prompt("Ingrese el valor de b2 (coeficiente de y en la segunda ecuacion): "));
+    let c2 = parseFloat(prompt("Ingrese el valor de c2 (termino independiente de la segunda ecuacion): "));
+    
+    // Determinantes
+    let det = a1 * b2 - a2 * b1;
+    
+    if (det === 0) {
+        alert("El sistema no tiene solución única (las ecuaciones son paralelas o coincidentes).");
+    } else {
+        let detX = c1 * b2 - c2 * b1;
+        let detY = a1 * c2 - a2 * c1;
+        
+        let x = detX / det;
+        let y = detY / det;
+        
+        alert(`El resultado es: x = ${x.toFixed(2)}, y = ${y.toFixed(2)}`);
+    }
 }
+
 
 dosvariables()
