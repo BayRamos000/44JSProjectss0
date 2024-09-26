@@ -90,7 +90,9 @@ function dosvariables() {
         let y = detY / det;
         
         alert(`El resultado es: x = ${x.toFixed(2)}, y = ${y.toFixed(2)}`);
+        console.log(x,y)
     }
+    
 }
 
 let pregunta = parseFloat(prompt("Escoge inecuaciones = 1 o Dosvaribles = 2"))
