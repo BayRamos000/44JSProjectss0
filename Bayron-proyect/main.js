@@ -89,8 +89,9 @@ function dosvariables() {
         let x = detX / det;
         let y = detY / det;
         
+       
+        console.log(`El resultado es: x = ${x.toFixed(2)}, y = ${y.toFixed(2)}`)
         alert(`El resultado es: x = ${x.toFixed(2)}, y = ${y.toFixed(2)}`);
-        console.log(x,y)
     }
     
 }
