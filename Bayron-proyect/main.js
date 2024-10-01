@@ -107,8 +107,8 @@ else if (pregunta === 2){
 
 
 function reiniciar (){
-    let pregunta = prompt("¿Quieres resolver otro problema  -- Sí -- No --?")
-    if (pregunta === "Sí" || pregunta === "si" || pregunta === "Si" || pregunta === "sí"){
+    let pregunta = prompt("¿Quieres resolver otro problema  -- Sí -- No --?").toUpperCase()
+    if (pregunta === "SÍ" || pregunta === "SI"){
         comienzo()
     }
     else{
@@ -117,3 +117,5 @@ function reiniciar (){
 }
 
 comienzo()
+
+to
