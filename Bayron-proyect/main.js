@@ -36,9 +36,8 @@ function inecuaciones() {
         console.log(problema2);
         console.log(`El resultado es: X ${simboloAMostrar} ${calculo}`);
     }
+    reiniciar()
 }
-
-
 
 function dosvariables() {
     let a1 = parseFloat(prompt("Ingrese el valor de a1 (coeficiente de x en la primera ecuacion): "));
@@ -57,26 +56,26 @@ function dosvariables() {
     console.log(problema);
     console.log(problema1);
     //muestro las filas y columnas
-    let filaUno = `${a1 < 0? "-": "+"} ${Math.abs(a1)} ${b1 < 0? "-": "+"} ${Math.abs(b1)}`;
-    let filaDos = `${a2 < 0? "-": "+"} ${Math.abs(a2)} ${b2 < 0? "-": "+"} ${Math.abs(b2)}`;
+    let filaUno = `${a1 < 0? "-": ""} ${Math.abs(a1)} ${b1 < 0? "-": "+"} ${Math.abs(b1)}`;
+    let filaDos = `${a2 < 0? "-": ""} ${Math.abs(a2)} ${b2 < 0? "-": "+"} ${Math.abs(b2)}`;
     console.log(filaUno);
     console.log(filaDos);
     //muestro el calculo de la determinante
-    let de = `(${a1 < 0? "-": "+"} ${Math.abs(a1)} * ${b2 < 0? "-": "+"} ${Math.abs(b2)}) - (${a2 < 0? "-": "+"} ${Math.abs(a2)} * ${b1 < 0? "-": "+"} ${Math.abs(b1)})`;
+    let de = `(${a1 < 0? "-": ""} ${Math.abs(a1)} * ${b2 < 0? "-": ""} ${Math.abs(b2)}) (${a2 < 0? "-": ""} ${Math.abs(a2)} * ${b1 < 0? "-": ""} ${Math.abs(b1)})`;
     console.log(de);
     //muestro el calculo de la determinante de x
-    let fiUno =  `${c1 < 0? "-": "+"} ${Math.abs(c1)} ${b1 < 0? "-": "+"} ${Math.abs(b1)}`;
+    let fiUno =  `${c1 < 0? "-": ""} ${Math.abs(c1)} ${b1 < 0? "-": "+"} ${Math.abs(b1)}`;
     console.log(fiUno);
-    let fiDos = `${c2 < 0? "-": "+"} ${Math.abs(c2)} ${b2 < 0? "-": "+"} ${Math.abs(b2)}`;
+    let fiDos = `${c2 < 0? "-": ""} ${Math.abs(c2)} ${b2 < 0? "-": "+"} ${Math.abs(b2)}`;
     console.log(fiDos);
-    let dex = `(${c1 < 0? "-": "+"} ${Math.abs(c1)} * ${b2 < 0? "-": "+"} ${Math.abs(b2)}) - (${c2 < 0? "-": "+"} ${Math.abs(c2)} * ${b1 < 0? "-": "+"} ${Math.abs(b1)})`;
+    let dex = `(${c1 < 0? "-": ""} ${Math.abs(c1)} * ${b2 < 0? "-": ""} ${Math.abs(b2)}) (${c2 < 0? "-": ""} ${Math.abs(c2)} * ${b1 < 0? "-": ""} ${Math.abs(b1)})`;
     console.log(dex);
     //muestro el calculo de la deterninante de y
-    let Funo = `${a1 < 0? "-": "+"} ${Math.abs(a1)} ${c1 < 0? "-": "+"} ${Math.abs(c1)}`;
+    let Funo = `${a1 < 0? "-": ""} ${Math.abs(a1)} ${c1 < 0? "-": "+"} ${Math.abs(c1)}`;
     console.log(Funo);
-    let Fdos = `${a2 < 0? "-": "+"} ${Math.abs(a2)} ${c2 < 0? "-": "+"} ${Math.abs(c2)}`;
+    let Fdos = `${a2 < 0? "-": ""} ${Math.abs(a2)} ${c2 < 0? "-": "+"} ${Math.abs(c2)}`;
     console.log(Fdos);
-    let dey = `(${a1 < 0? "-": "+"} ${Math.abs(a1)} * ${c2 < 0? "-": "+"} ${Math.abs(c2)}) - (${a2 < 0? "-": "+"} ${Math.abs(a2)} * ${c1 < 0? "-": "+"} ${Math.abs(c1)})`;
+    let dey = `(${a1 < 0? "-": ""} ${Math.abs(a1)} * ${c2 < 0? "-": ""} ${Math.abs(c2)})  (${a2 < 0? "-": ""} ${Math.abs(a2)} * ${c1 < 0? "-": ""} ${Math.abs(c1)})`;
     console.log(dey); 
 
     
@@ -92,9 +91,11 @@ function dosvariables() {
         console.log(`El resultado es: x = ${x.toFixed(2)}, y = ${y.toFixed(2)}`)
         alert(`El resultado es: x = ${x.toFixed(2)}, y = ${y.toFixed(2)}`);
     }
+    reiniciar()
     
 }
 
+function comienzo (){
 let pregunta = parseFloat(prompt("Escoge inecuaciones = 1 o Dosvaribles = 2"))
 if (pregunta === 1){
     inecuaciones();
@@ -102,3 +103,17 @@ if (pregunta === 1){
 else if (pregunta === 2){
     dosvariables();
 }
+}
+
+
+function reiniciar (){
+    let pregunta = prompt("¿Quieres resolver otro problema  -- Sí -- No --?")
+    if (pregunta === "Sí" || pregunta === "si" || pregunta === "Si" || pregunta === "sí"){
+        comienzo()
+    }
+    else{
+        alert("Hasta luego, gracias por usar mi aplicación")
+    }
+}
+
+comienzo()
