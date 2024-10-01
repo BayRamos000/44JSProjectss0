@@ -95,6 +95,41 @@ function dosvariables() {
     
 }
 
+function cuadraticas() {
+    let a = parseFloat(prompt("Ingrese el valor de a (coeficiente de x^2): "));
+    let b = parseFloat(prompt("Ingrese el valor de b (coeficiente de x): "));
+    let c = parseFloat(prompt("Ingrese el valor de c (término independiente): "));
+    let problema = `${a}x^2 ${b < 0 ? "-" : "+"} ${Math.abs(b)} ${c < 0 ? "-" : "+"} ${Math.abs(c)} = 0 `;
+    console.log(problema)
+
+    const m = -b / (2 * a); // Media de las raíces
+    console.log(`el punto medio entre x1 y x2 es: ${m}`)
+    const discriminante = m * m - (c / a); // Desviación (incluye complejidad)
+    console.log(`discriminante es numero negativo es: ${discriminante}`)
+    
+    let d;
+    if (discriminante >= 0) {
+        d = Math.sqrt(discriminante); // Soluciones reales
+        console.log(`raiz real es: ${d}`)
+        const x2 = m + d;
+        console.log(`${m} + ${d}`)
+        const x1 = m - d;
+        console.log(`${m} - ${d}`)
+        console.log(`x2 = ${x2}`);
+        console.log(`x1 = ${x1}`);
+    } else {
+        d = Math.sqrt(-discriminante) + 'i'; // Soluciones complejas
+        console.log(`raiz compleja: ${d}`)
+        const x2 = `${m} + ${d}`;
+        console.log(`${m} + ${d}`)
+        const x1 = `${m} - ${d}`;
+        console.log(`${m} - ${d}`)
+        console.log(`x2 = ${x2}`);
+        console.log(`x1 = ${x1}`);
+    }
+}
+cuadraticas();
+
 function comienzo (){
 let pregunta = parseFloat(prompt("Escoge inecuaciones = 1 o Dosvaribles = 2"))
 if (pregunta === 1){
@@ -103,6 +138,7 @@ if (pregunta === 1){
 else if (pregunta === 2){
     dosvariables();
 }
+
 }
 
 
@@ -118,4 +154,4 @@ function reiniciar (){
 
 comienzo()
 
-to
+
